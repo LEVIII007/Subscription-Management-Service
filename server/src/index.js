@@ -1,5 +1,10 @@
 import express from 'express';
+import authRouter from './routes/auth.route.js';
+
 const app = express();
+
+// Use the auth router
+app.use(authRouter);
 
 // Define a route
 app.get('/', (req, res) => {
